@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mydb@localhost">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.43">
+    <root id="1">
+      <DefaultCasing>exact</DefaultCasing>
+      <DefaultEngine>InnoDB</DefaultEngine>
+      <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
+      <ServerVersion>8.0.31</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="information_schema"/>
+    <schema id="3" parent="1" name="mydb">
+      <Current>1</Current>
+    </schema>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <table id="6" parent="3" name="employee">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="7" parent="6" name="id">
+      <DataType>int|0s</DataType>
+      <Position>1</Position>
+    </column>
+    <column id="8" parent="6" name="first_name">
+      <DataType>varchar(20)|0s</DataType>
+      <Position>2</Position>
+    </column>
+    <column id="9" parent="6" name="last_name">
+      <DataType>varchar(20)|0s</DataType>
+      <Position>3</Position>
+    </column>
+  </database-model>
+</dataSource>
