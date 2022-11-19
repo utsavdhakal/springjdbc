@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b41e2e53-dc70-439d-b051-1fa19a8c87f2" name="Changes" comment="configuring datasource and jdbc template">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b41e2e53-dc70-439d-b051-1fa19a8c87f2" name="Changes" comment="using jdbc template to insert record">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +43,8 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -52,6 +52,12 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.springjdbc.Test" />
@@ -80,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668864395912</updated>
-      <workItem from="1668864398188" duration="2016000" />
+      <workItem from="1668864398188" duration="2517000" />
     </task>
     <task id="LOCAL-00001" summary="configuring datasource and jdbc template">
       <created>1668867358153</created>
@@ -89,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668867358153</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="using jdbc template to insert record">
+      <created>1668868239270</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668868239270</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="configuring datasource and jdbc template" />
-    <option name="LAST_COMMIT_MESSAGE" value="configuring datasource and jdbc template" />
+    <MESSAGE value="using jdbc template to insert record" />
+    <option name="LAST_COMMIT_MESSAGE" value="using jdbc template to insert record" />
   </component>
 </project>
