@@ -10,10 +10,13 @@ public class EmployeeDaoImpl implements EmployeeDao {
     @Override
     public int create(Employee employee) {
         String sql = "INSERT INTO employee VALUES (?, ?, ?)";
-        int id = employee.getId();
-        String firstName = employee.getFirstName();
-        String lastName = employee.getLastName();
-        return jdbcTemplate.update(sql, id, firstName, lastName);
+        return jdbcTemplate.update(sql, employee.getId(), employee.getFirstName(), employee.getLastName());
+    }
+
+    @Override
+    public int update(Employee employee) {
+        String sql = "UPDATE employee SET first_name=?, last_name=? where id=?";
+        return jdbcTemplate.update(sql, employee.getFirstName(), employee.getLastName(), employee.getId());
     }
 
     public JdbcTemplate getJdbcTemplate() {
