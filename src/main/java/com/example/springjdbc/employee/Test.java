@@ -4,6 +4,8 @@ import com.example.springjdbc.employee.dao.EmployeeDao;
 import com.example.springjdbc.employee.dto.Employee;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.util.List;
+
 public class Test {
     public static void main(String[] args) {
         var ctx = new ClassPathXmlApplicationContext("employee/config.xml");
@@ -20,7 +22,12 @@ public class Test {
         /*int result = employeeDao.delete(2);
         System.out.println(result + " row deleted.");*/
 
-        Employee employee = employeeDao.read(1);
-        System.out.println(employee);
+        /*Employee employee = employeeDao.read(1);
+        System.out.println(employee);*/
+
+        List<Employee> employees = employeeDao.read();
+        for (Employee employee : employees) {
+            System.out.println(employee);
+        }
     }
 }

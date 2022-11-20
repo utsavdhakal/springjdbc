@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b41e2e53-dc70-439d-b051-1fa19a8c87f2" name="Changes" comment="implemented delete method">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springjdbc/employee/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springjdbc/employee/Test.java" afterDir="false" />
+    <list default="true" id="b41e2e53-dc70-439d-b051-1fa19a8c87f2" name="Changes" comment="implemented read method">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springjdbc/employee/dao/EmployeeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springjdbc/employee/dao/EmployeeDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springjdbc/employee/dao/impl/EmployeeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springjdbc/employee/dao/impl/EmployeeDaoImpl.java" afterDir="false" />
     </list>
@@ -109,7 +107,7 @@
       <workItem from="1668864398188" duration="2681000" />
       <workItem from="1668890513506" duration="46000" />
       <workItem from="1668917050165" duration="3207000" />
-      <workItem from="1668921860476" duration="1841000" />
+      <workItem from="1668921860476" duration="2188000" />
     </task>
     <task id="LOCAL-00001" summary="configuring datasource and jdbc template">
       <created>1668867358153</created>
@@ -153,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668922373409</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="implemented read method">
+      <created>1668923758167</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668923758167</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +182,7 @@
     <MESSAGE value="implemented create method for employee dto inside employee dao" />
     <MESSAGE value="implemented update method" />
     <MESSAGE value="implemented delete method" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented delete method" />
+    <MESSAGE value="implemented read method" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented read method" />
   </component>
 </project>

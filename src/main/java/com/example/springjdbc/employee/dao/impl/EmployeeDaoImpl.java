@@ -6,6 +6,8 @@ import com.example.springjdbc.employee.dto.Employee;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
+import java.util.List;
+
 public class EmployeeDaoImpl implements EmployeeDao {
 
     private JdbcTemplate jdbcTemplate;
@@ -32,6 +34,13 @@ public class EmployeeDaoImpl implements EmployeeDao {
         RowMapper<Employee> mapper = new EmployeeRowMapper();
         String sql = "SELECT * FROM employee WHERE id=?";
         return jdbcTemplate.queryForObject(sql, mapper, id);
+    }
+
+    @Override
+    public List<Employee> read() {
+        RowMapper<Employee> mapper = new EmployeeRowMapper();
+        String sql = "SELECT * FROM employee";
+        return jdbcTemplate.query(sql, mapper);
     }
 
     public JdbcTemplate getJdbcTemplate() {
