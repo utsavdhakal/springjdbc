@@ -13,8 +13,11 @@ public class Test {
         int result = employeeDao.create(employee);
         System.out.println(result + " rows affected.");*/
 
-        Employee employee = new Employee(1, "Josh", "Lang");
+        /*Employee employee = new Employee(1, "Josh", "Lang");
         int result = employeeDao.update(employee);
-        System.out.println(result + " rows updated.");
+        System.out.println(result + " rows updated.");*/
+
+        int result = employeeDao.delete(2);
+        System.out.println(result + " row deleted.");
     }
 }
