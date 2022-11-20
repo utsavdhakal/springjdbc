@@ -5,12 +5,19 @@ import com.example.springjdbc.employee.dao.rowmapper.EmployeeRowMapper;
 import com.example.springjdbc.employee.dto.Employee;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
+@Component("employeeDao")
 public class EmployeeDaoImpl implements EmployeeDao {
 
-    private JdbcTemplate jdbcTemplate;
+    private final JdbcTemplate jdbcTemplate;
+
+    public EmployeeDaoImpl(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
+
     @Override
     public int create(Employee employee) {
         String sql = "INSERT INTO employee VALUES (?, ?, ?)";
@@ -41,13 +48,5 @@ public class EmployeeDaoImpl implements EmployeeDao {
         RowMapper<Employee> mapper = new EmployeeRowMapper();
         String sql = "SELECT * FROM employee";
         return jdbcTemplate.query(sql, mapper);
-    }
-
-    public JdbcTemplate getJdbcTemplate() {
-        return jdbcTemplate;
-    }
-
-    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
     }
 }
