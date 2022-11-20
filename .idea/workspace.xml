@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b41e2e53-dc70-439d-b051-1fa19a8c87f2" name="Changes" comment="implemented read method : reading multiple records">
+    <list default="true" id="b41e2e53-dc70-439d-b051-1fa19a8c87f2" name="Changes" comment="autowiring jdbc template">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dba1a2a6-1e63-4c42-aa37-39e05945103e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/dba1a2a6-1e63-4c42-aa37-39e05945103e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springjdbc/employee/dao/impl/EmployeeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springjdbc/employee/dao/impl/EmployeeDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/employee/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/employee/config.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,34 +36,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_directory_selection&quot;: &quot;/home/utsav/intellij-workspace/springjdbc/src/main/java/com/example/springjdbc/employee/dao&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;8442c19f847079c28cda0f5040d1b4d9&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "/home/utsav/intellij-workspace/springjdbc/src/main/java/com/example/springjdbc/passenger",
+    "last_opened_file_path": "/home/utsav/intellij-workspace/springjdbc/src/main/resources/passenger",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "8442c19f847079c28cda0f5040d1b4d9"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/passenger" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.example.springjdbc.employee.Test">
+  <component name="RunManager" selected="Application.com.example.springjdbc.passenger.Test">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.springjdbc.Test" />
       <module name="springjdbc" />
@@ -90,8 +94,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.example.springjdbc.passenger.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.springjdbc.passenger.Test" />
+      <module name="springjdbc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.springjdbc.passenger.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.example.springjdbc.passenger.Test" />
         <item itemvalue="Application.com.example.springjdbc.employee.Test" />
         <item itemvalue="Application.Test" />
       </list>
@@ -108,7 +126,8 @@
       <workItem from="1668864398188" duration="2681000" />
       <workItem from="1668890513506" duration="46000" />
       <workItem from="1668917050165" duration="3207000" />
-      <workItem from="1668921860476" duration="2846000" />
+      <workItem from="1668921860476" duration="3088000" />
+      <workItem from="1668927393288" duration="2343000" />
     </task>
     <task id="LOCAL-00001" summary="configuring datasource and jdbc template">
       <created>1668867358153</created>
@@ -166,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668924337404</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="autowiring jdbc template">
+      <created>1668924762533</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668924762533</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +218,7 @@
     <MESSAGE value="implemented delete method" />
     <MESSAGE value="implemented read method" />
     <MESSAGE value="implemented read method : reading multiple records" />
-    <option name="LAST_COMMIT_MESSAGE" value="implemented read method : reading multiple records" />
+    <MESSAGE value="autowiring jdbc template" />
+    <option name="LAST_COMMIT_MESSAGE" value="autowiring jdbc template" />
   </component>
 </project>
