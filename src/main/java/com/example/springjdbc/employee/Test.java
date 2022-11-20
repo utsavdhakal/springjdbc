@@ -17,7 +17,10 @@ public class Test {
         int result = employeeDao.update(employee);
         System.out.println(result + " rows updated.");*/
 
-        int result = employeeDao.delete(2);
-        System.out.println(result + " row deleted.");
+        /*int result = employeeDao.delete(2);
+        System.out.println(result + " row deleted.");*/
+
+        Employee employee = employeeDao.read(1);
+        System.out.println(employee);
     }
 }

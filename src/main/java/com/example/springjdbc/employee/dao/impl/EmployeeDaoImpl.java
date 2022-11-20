@@ -1,8 +1,10 @@
 package com.example.springjdbc.employee.dao.impl;
 
 import com.example.springjdbc.employee.dao.EmployeeDao;
+import com.example.springjdbc.employee.dao.rowmapper.EmployeeRowMapper;
 import com.example.springjdbc.employee.dto.Employee;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 
 public class EmployeeDaoImpl implements EmployeeDao {
 
@@ -23,6 +25,13 @@ public class EmployeeDaoImpl implements EmployeeDao {
     public int delete(int id) {
         String sql = "DELETE FROM employee WHERE id=?";
         return jdbcTemplate.update(sql, id);
+    }
+
+    @Override
+    public Employee read(int id) {
+        RowMapper<Employee> mapper = new EmployeeRowMapper();
+        String sql = "SELECT * FROM employee WHERE id=?";
+        return jdbcTemplate.queryForObject(sql, mapper, id);
     }
 
     public JdbcTemplate getJdbcTemplate() {
